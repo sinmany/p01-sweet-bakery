@@ -879,9 +879,88 @@ body {
         transform: translateY(0px);
     }
 }
-/* ===================================================
-   Responsive Breakpoints & Mobile Optimization
-   =================================================== */
+
+/* Footer */
+footer {
+    padding: 4.5rem 5% 2.5rem;
+    background: linear-gradient(180deg, #5A9B87 0%, #6DAE99 50%, #80C1AB 100%);
+    color: var(--cream);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #B5EAD7;
+}
+
+.footer-section p,
+.footer-section a {
+    color: var(--mint-light);
+    line-height: 1.8;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    background: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a svg {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #B5EAD7;
+    transform: translateY(-3px);
+}
+
+.social-links a:hover svg {
+    transform: scale(1.1);
+}
+
+.copyright {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 248, 240, 0.2);
+    color: var(--mint-light);
+    font-size: 0.95rem;
+}
+
+/* Responsive Breakpoints */
 
 /* Tablet & Smaller Desktop (max-width: 1024px) */
 @media (max-width: 1024px) {
@@ -954,6 +1033,16 @@ body {
 
     .container-sweet-club {
         padding: 2rem 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 }
 

@@ -1,12 +1,8 @@
-// ==========================================
-// Sweet Dreams Bakery - Main JavaScript
-// ==========================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Active Navigation Link on Scroll
     const navLinks = document.querySelectorAll('.menu a');
-    const sections = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll('section[id], footer[id]');
 
     window.addEventListener('scroll', () => {
         let current = '';
